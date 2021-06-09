@@ -37,7 +37,7 @@ console.log({existe16, existe22, existe31, existe62})
 
 console.log('---------------------------------------------')
 percurso = []
-console.log(arvore.inOrderTraversal(n => percurso.push(n)))
+arvore.inOrderTraversal(n => percurso.push(n))
 console.log(percurso)
 
 // Exclusão de nodo folha (grau 0)
@@ -46,7 +46,7 @@ percurso = []
 arvore.inOrderTraversal(n => percurso.push(n))
 console.log('Sem o 26: ', percurso)
 
-// Exclusão de nodo de garu 1 com descendente à esquerda
+// Exclusão de nodo de grau 1 com descendente à esquerda
 arvore.remove(44)
 percurso = []
 arvore.inOrderTraversal(n => percurso.push(n))
